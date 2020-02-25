@@ -17,10 +17,11 @@ class RiverTest < Minitest::Test
    assert_equal(1, @river1.fishes.length)
  end
  #
- def add_fish(fish)
+ def test_add_fish(fish)
    @river1.add_fish(@fish2)
    assert_equal(2, @river1.fishes.length)
  end
+ binding.pry
 
  def test_remove_fish
    @river1.remove_fish
