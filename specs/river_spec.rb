@@ -17,9 +17,29 @@ class RiverTest < Minitest::Test
    assert_equal(1, @river1.fishes.length)
  end
  #
+ def add_fish(fish)
+   @river1.add_fish(@fish2)
+   assert_equal(2, @river1.fishes.length)
+ end
+
  def test_remove_fish
    @river1.remove_fish
    assert_equal(0, @river1.fishes.length)
  end
+  #
+  # def test_fish_caught
+  #   # add fish
+  #   # remove fish
+  # end
 
 end
+
+# def test_pick_from_stop()
+#    @bus_stop1.add_person_to_queue(@person1)
+#    @bus_stop1.add_person_to_queue(@person1)
+#    @bus_stop1.add_person_to_queue(@person1)
+#    @bus_stop1.add_person_to_queue(@person1)
+#    @bus_22.pick_from_stop(@bus_stop1)
+#    assert_equal(4, @bus_22.number_of_passengers)
+#    assert_equal(0, @bus_stop1.queue_length)
+#  end
