@@ -7,6 +7,7 @@ require_relative('../bear.rb')
 require_relative('../river.rb')
 require_relative('../fish.rb')
 
+
 class RiverTest < Minitest::Test
 
   def setup
@@ -17,11 +18,10 @@ class RiverTest < Minitest::Test
    assert_equal(1, @river1.fishes.length)
  end
  #
- def test_add_fish(fish)
+ def test_add_fish
    @river1.add_fish(@fish2)
    assert_equal(2, @river1.fishes.length)
  end
- binding.pry
 
  def test_remove_fish
    @river1.remove_fish
@@ -34,13 +34,3 @@ class RiverTest < Minitest::Test
   # end
 
 end
-
-# def test_pick_from_stop()
-#    @bus_stop1.add_person_to_queue(@person1)
-#    @bus_stop1.add_person_to_queue(@person1)
-#    @bus_stop1.add_person_to_queue(@person1)
-#    @bus_stop1.add_person_to_queue(@person1)
-#    @bus_22.pick_from_stop(@bus_stop1)
-#    assert_equal(4, @bus_22.number_of_passengers)
-#    assert_equal(0, @bus_stop1.queue_length)
-#  end
