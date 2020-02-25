@@ -1,8 +1,6 @@
-require('pry')
-
 class River
 
-  attr_reader :name, :fishes
+  attr_accessor :name, :fishes
 
   def initialize(name, fishes)
     @name = name

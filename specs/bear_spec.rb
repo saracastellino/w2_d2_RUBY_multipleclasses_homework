@@ -19,11 +19,7 @@ class BearTest < Minitest::Test
 
   def test_put_fish_in_the_stomach
     @bear1.put_fish_in_the_stomach(@fish1)
-    assert_equal(1, @bear1.stomach.length)
-  end
-
-  def test_fish_caught
-    @river1.fish_caught("Gilmour", @bear1)
+    @river1.remove_fish(@fish1)
     assert_equal(0, @river1.fishes.length)
     assert_equal(1, @bear1.stomach.length)
   end

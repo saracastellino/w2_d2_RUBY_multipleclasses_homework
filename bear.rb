@@ -1,6 +1,6 @@
 class Bear
 
-attr_reader :name, :type, :stomach
+attr_accessor :name, :type, :stomach
 
   def initialize(name, type, stomach)
     @name = name
@@ -8,11 +8,9 @@ attr_reader :name, :type, :stomach
     @stomach = [ ]
   end
   #
-  def fish_in_the_stomach(fish)
+  def put_fish_in_the_stomach(fish, bear)
     @stomach.push(fish)
+    fishes.remove_fish
   end
-
-
-
 
 end
