@@ -11,7 +11,8 @@ class FishTest
 
 def setup
   @fish1 = Fish.new("Gilmour")
-
+  @fish2 = Fish.new("Cleo")
+  @fish3 = Fish.new("Tiburon")
 end
 
 end
