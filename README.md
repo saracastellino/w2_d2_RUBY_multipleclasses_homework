@@ -1,1 +1,1 @@
-# week1_day2_homework
+# week2_day2_homework
